@@ -2,14 +2,13 @@ import { SimpleGrid, Box } from '@chakra-ui/react'
 import './App.css'
 
 import { Layout } from './components/Layout.component'
+import { Moviecard } from './components/Moviecard.component'
 
 function App() {
   return (
     <Layout>
       <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} gap="10">
-        <Box bg="gray.100" height="200px" borderRadius="md">
-          Card 1
-        </Box>
+        <Moviecard movieName="Jaws" />
         <Box bg="gray.100" height="200px" borderRadius="md">
           Card 2
         </Box>
